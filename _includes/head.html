@@ -19,8 +19,9 @@
     <!-- begin. I can add this to any section of the site to track specific behavior. For now I'll leave it in the head. -->
     <script>
     mixpanel.track("Page Visit");
-    mixpanel.people.set();
-    mixpanel.identify();
+    mixpanel.track("Home Page Viewed", {"First Time": "TRUE"}, function() {
+      setTimeout(mixpanel.register({"First Time": "FALSE"}), 500);
+      });
     </script>
     <!-- end. I can add this to any section of the site to track specific behavior. For now I'll leave it in the head. -->
 
