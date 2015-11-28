@@ -16,6 +16,15 @@
     mixpanel.init("66125773a1ca24a83e6173c71891dec1");</script>
     <!-- end Mixpanel -->
 
+    <!-- begin. I can add this to any section of the site to track specific behavior. For now I'll leave it in the head. -->
+    <script>
+    mixpanel.track("Page Visit");
+    mixpanel.identify();
+    mixpanel.people.set({"$last_login": new Date()});
+    </script>
+    <!-- end. I can add this to any section of the site to track specific behavior. For now I'll leave it in the head. -->
+
+
 <!-- GOOGLE ANALYTICS TAG BEGIN - https://developers.google.com/analytics/devguides/collection/analyticsjs/ -->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
