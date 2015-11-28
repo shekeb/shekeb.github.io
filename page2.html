@@ -7,6 +7,7 @@ permalink: /page2/
 <script>
 mixpanel.track("Page Visit");
 mixpanel.identify();
+mixpanel.people.set({"$last_login": new Date()});
 </script>
 
 Thanks for visiting page 2!
