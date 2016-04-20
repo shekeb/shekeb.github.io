@@ -1,3 +1,24 @@
+---
+layout: page
+title: webhook
+permalink: /webhook
+---
+
+
+
+Thanks for visiting the webhook page!
+<br>
+<a href="http://www.economist.com/printedition/">The Economist</a>
+<br>
+<a href="http://international.nytimes.com">The New York Times</a>
+<br>
+<a href="http://npr.org">NPR</a>
+<br>
+<a href="http://www.ncbi.nlm.nih.gov/pubmed/">PubMed</a>
+
+
+<!-- webhook for Facebook Messenger Platform -->
+<script>
 var express = require('express');
 var app = express();
 var request = require('request');
@@ -63,3 +84,5 @@ app.post('/webhook', function (req, res) {
 
 app.listen(process.env.PORT);
 
+</script>
+<!-- webhook for Facebook Messenger Platform -->
