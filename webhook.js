@@ -1,4 +1,3 @@
-<script>
 var express = require('express');
 var app = express();
 var request = require('request');
@@ -64,5 +63,3 @@ app.post('/webhook', function (req, res) {
 
 app.listen(process.env.PORT);
 
-</script>
-<!-- webhook for Facebook Messenger Platform -->
